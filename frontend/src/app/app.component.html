@@ -1,0 +1,8 @@
+<div class="container">
+  <h2>Cargar Archivo con Barra de Progreso</h2>
+  <input type="file" (change)="onFileSelected($event)">
+  <div *ngIf="progress > 0">
+    <p>Progreso: {{ progress }}%</p>
+    <div class="progress-bar" [style.width]="progress + '%'"></div>
+  </div>
+</div>
